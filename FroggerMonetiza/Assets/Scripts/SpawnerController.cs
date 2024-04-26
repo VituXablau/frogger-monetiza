@@ -13,10 +13,10 @@ public class SpawnerController : MonoBehaviour
 
     [SerializeField]
     private int dirLookX;
-    
+
     void Start()
     {
-        StartCoroutine(Spawn());        
+        StartCoroutine(Spawn());
     }
 
     IEnumerator Spawn()
@@ -24,11 +24,9 @@ public class SpawnerController : MonoBehaviour
         while (true)
         {
             waitSeconds = Random.Range(minTime, maxTime);
-
-            yield return new WaitForSeconds(waitSeconds);
-
             GameObject obj = Instantiate(prefObj, transform.position, Quaternion.identity) as GameObject;
             obj.GetComponent<ObjectsController>().dirX = dirLookX;
+            yield return new WaitForSeconds(waitSeconds);
         }
     }
 }
