@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectsController : MonoBehaviour
+public class ObjectController : MonoBehaviour
 {
     [SerializeField]
     private float spd;
@@ -15,8 +15,13 @@ public class ObjectsController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        LimitMove();
+        if (gameObject.name.Contains("Aligator"))
+            Destroy(gameObject, 3);
+        else
+        {
+            Move();
+            LimitMove();
+        }
     }
 
     void Move()

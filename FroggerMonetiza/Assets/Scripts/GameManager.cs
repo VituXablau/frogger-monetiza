@@ -10,12 +10,13 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject gameplay, gameOver;
     public GameObject[] lives;
-    public int gameLives;
-    [SerializeField] private float totalTime;
-    public float timeToGoal;
+    public TMP_Text scoreTxt, highScoreTxt, gameOverScoreTxt, gameOverHighScoreTxt;
+    public Image timeBar;
+
+    public float timeToGoal, totalTime;
     public bool isCounting;
-    [SerializeField] private TMP_Text scoreTxt, highScoreTxt, gameOverScoreTxt, gameOverHighScoreTxt;
-    [SerializeField] private Image timeBar;
+    public int gameLives, curSceneIndex;
+    public static int score, highScore;
 
     void Awake()
     {
@@ -24,12 +25,14 @@ public class GameManager : MonoBehaviour
 
         timeToGoal = totalTime;
         isCounting = true;
+
+        curSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     void Update()
     {
-        scoreTxt.text = "Score: " + Score.score;
-        highScoreTxt.text = "High Score: " + Score.highScore;
+        scoreTxt.text = "Score: " + score;
+        highScoreTxt.text = "High Score: " + highScore;
 
         while (isCounting)
         {
@@ -44,8 +47,11 @@ public class GameManager : MonoBehaviour
             break;
         }
 
-        timeBar.fillAmount = timeToGoal / 100;
+        timeBar.fillAmount = timeToGoal / totalTime;
         timeToGoal = Mathf.Clamp(timeToGoal, 0, totalTime);
+
+        if (Input.GetKeyDown(KeyCode.C))
+            NextLevel();
     }
 
     public void ResetTimer()
@@ -55,18 +61,18 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseScore(int value)
     {
-        Score.score += value;
+        score += value;
     }
 
     public void GameOver()
     {
         isCounting = false;
 
-        if (Score.score > Score.highScore)
-            Score.highScore = Score.score;
+        if (score > highScore)
+            highScore = score;
 
-        gameOverScoreTxt.text = "Score: " + Score.score;
-        gameOverHighScoreTxt.text = "High Score: " + Score.highScore;
+        gameOverScoreTxt.text = "Score: " + score;
+        gameOverHighScoreTxt.text = "High Score: " + highScore;
 
         gameplay.SetActive(false);
         gameOver.SetActive(true);
@@ -74,13 +80,15 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        int curSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(curSceneIndex + 1);
+        if (curSceneIndex != 3)
+            SceneManager.LoadScene(curSceneIndex + 1);
+        else
+            SceneManager.LoadScene(1);
     }
 
     public void RestartGame()
     {
-        Score.score = 0;
+        score = 0;
         SceneManager.LoadScene(0);
     }
 }

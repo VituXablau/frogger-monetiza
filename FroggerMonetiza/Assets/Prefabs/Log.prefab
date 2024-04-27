@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7187792321798079719}
   - component: {fileID: 449332935995173078}
   m_Layer: 0
-  m_Name: Trunk
+  m_Name: Log
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

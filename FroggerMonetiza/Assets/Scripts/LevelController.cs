@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] areas;
+    public GameObject[] areas;
 
     void Update()
     {
