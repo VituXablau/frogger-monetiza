@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
 
     void Move(int dirX, int dirZ)
     {
+        AudioManager.instance.PlaySFX("Hop");
+
         transform.position = new Vector3(transform.position.x + dirX, transform.position.y, transform.position.z + dirZ);
     }
 
@@ -72,6 +74,8 @@ public class PlayerController : MonoBehaviour
 
     void LoseLife()
     {
+        AudioManager.instance.PlaySFX("Death");
+
         if (GameManager.instance.gameLives > 0)
         {
             GameManager.instance.gameLives--;

@@ -1092,6 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 7408574683557191447, guid: c31dfe9cff267bd4bae0c89550d40f3e, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 3
   dirLookX: -1
@@ -1207,6 +1208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 2
   maxTime: 3
   dirLookX: -1
@@ -1634,6 +1636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 3
   dirLookX: -1
@@ -1682,6 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 2
   dirLookX: 1
@@ -1870,15 +1874,17 @@ MonoBehaviour:
   - {fileID: 671256738}
   - {fileID: 1221735253}
   - {fileID: 471170616}
-  gameLives: 3
-  totalTime: 30
-  timeToGoal: 0
-  isCounting: 0
   scoreTxt: {fileID: 96662497}
   highScoreTxt: {fileID: 1956578750}
   gameOverScoreTxt: {fileID: 1292455447}
   gameOverHighScoreTxt: {fileID: 1912693779}
   timeBar: {fileID: 1178410196}
+  timeToGoal: 0
+  totalTime: 30
+  waitTime: 4
+  isCounting: 0
+  gameLives: 3
+  curSceneIndex: 0
 --- !u!4 &1217860563
 Transform:
   m_ObjectHideFlags: 0
@@ -2388,6 +2394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 2
   dirLookX: -1
@@ -2539,6 +2546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 2
   dirLookX: -1
@@ -2587,6 +2595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 2
   dirLookX: 1
@@ -3126,6 +3135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 7408574683557191447, guid: c31dfe9cff267bd4bae0c89550d40f3e, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 3
   dirLookX: -1
@@ -3480,6 +3490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 2
   maxTime: 3
   dirLookX: 1
@@ -3528,6 +3539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 0}
   minTime: 1
   maxTime: 3
   dirLookX: 1

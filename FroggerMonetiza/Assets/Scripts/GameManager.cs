@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
             if (timeToGoal <= 0)
             {
                 PlayerController.DestroyItself();
+                AudioManager.instance.PlaySFX("Time");
                 GameOver();
             }
 
@@ -66,6 +68,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        AudioManager.instance.StopMusic();
+
         isCounting = false;
 
         if (score > highScore)

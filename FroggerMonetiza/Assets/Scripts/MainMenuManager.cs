@@ -13,6 +13,7 @@ public class MainMenuManager : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
+                AudioManager.instance.PlayMusic();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }

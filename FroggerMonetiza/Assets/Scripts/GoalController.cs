@@ -11,6 +11,7 @@ public class GoalController : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            AudioManager.instance.PlaySFX("Goal");
             GameManager.instance.IncreaseScore(100 + (int)GameManager.instance.timeToGoal);
             GameManager.instance.ResetTimer();
 
