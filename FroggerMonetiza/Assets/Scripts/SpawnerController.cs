@@ -28,7 +28,7 @@ public class SpawnerController : MonoBehaviour
         while (true)
         {
             waitSeconds = Random.Range(minTime, maxTime);
-            GameObject obj = Instantiate(prefObj, transform.position, Quaternion.identity) as GameObject;
+            GameObject obj = Instantiate(prefObj, transform.position, Quaternion.Euler(0, dirLookX * 90, 0));
             obj.GetComponent<ObjectController>().dirX = dirLookX;
             yield return new WaitForSeconds(waitSeconds);
         }

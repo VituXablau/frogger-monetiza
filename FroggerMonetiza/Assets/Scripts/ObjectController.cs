@@ -26,7 +26,7 @@ public class ObjectController : MonoBehaviour
 
     void Move()
     {
-        transform.Translate(new Vector3(dirX * spd, 0, 0) * Time.deltaTime);
+        transform.position += new Vector3(dirX * spd, 0, 0) * Time.deltaTime;
     }
 
     void LimitMove()

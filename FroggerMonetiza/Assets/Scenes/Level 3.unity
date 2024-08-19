@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -469,55 +469,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197638141}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &206838394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 206838395}
-  - component: {fileID: 206838396}
-  m_Layer: 0
-  m_Name: Aligator Spawner 5
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &206838395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206838394}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 6.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593551243}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &206838396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206838394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefObj: {fileID: 5135735642203516356, guid: 2f9dfc3794329e2448a60ce885174066, type: 3}
-  levelControllerObj: {fileID: 2124051751}
-  minTime: 8
-  maxTime: 24
-  dirLookX: 0
 --- !u!1 &251022947
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,10 +872,6 @@ Transform:
   - {fileID: 1611338037}
   - {fileID: 1409881856}
   - {fileID: 528513008}
-  - {fileID: 866860075}
-  - {fileID: 1675167593}
-  - {fileID: 1746289983}
-  - {fileID: 206838395}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616350459
@@ -1261,9 +1208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
-  levelControllerObj: {fileID: 0}
-  minTime: 2
+  prefObj: {fileID: 8589403367176650314, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 2124051751}
+  minTime: 1
   maxTime: 3
   dirLookX: -1
 --- !u!1 &823448288
@@ -1341,55 +1288,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823448288}
   m_CullTransparentMesh: 1
---- !u!1 &866860074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 866860075}
-  - component: {fileID: 866860076}
-  m_Layer: 0
-  m_Name: Aligator Spawner 2
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &866860075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866860074}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 6.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593551243}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &866860076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866860074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefObj: {fileID: 5135735642203516356, guid: 2f9dfc3794329e2448a60ce885174066, type: 3}
-  levelControllerObj: {fileID: 2124051751}
-  minTime: 8
-  maxTime: 24
-  dirLookX: 0
 --- !u!1 &871127331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,10 +1636,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 8508749880196858753, guid: cc42ca1abf426e243832d4efb149c4f6, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
-  maxTime: 3
+  maxTime: 4
   dirLookX: -1
 --- !u!1 &1160912432
 GameObject:
@@ -1787,8 +1685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 2585449802343935872, guid: e38d40df3525ab7429b2031c734c3664, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
   maxTime: 2
   dirLookX: 1
@@ -2495,8 +2393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 2585449802343935872, guid: e38d40df3525ab7429b2031c734c3664, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
   maxTime: 2
   dirLookX: -1
@@ -2647,10 +2545,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 8508749880196858753, guid: cc42ca1abf426e243832d4efb149c4f6, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
-  maxTime: 2
+  maxTime: 5
   dirLookX: -1
 --- !u!1 &1409881855
 GameObject:
@@ -2696,8 +2594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 9203644290216392423, guid: 0c98c95aeace26345814facdf1ab660b, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 864617566625739017, guid: 0023bbc6aa7ae4a40a287dd55c1f0870, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
   maxTime: 2
   dirLookX: 1
@@ -3236,8 +3134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 7408574683557191447, guid: c31dfe9cff267bd4bae0c89550d40f3e, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 864617566625739017, guid: 0023bbc6aa7ae4a40a287dd55c1f0870, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
   maxTime: 3
   dirLookX: -1
@@ -3441,55 +3339,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631536891}
   m_CullTransparentMesh: 1
---- !u!1 &1675167592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1675167593}
-  - component: {fileID: 1675167594}
-  m_Layer: 0
-  m_Name: Aligator Spawner 3
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1675167593
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675167592}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593551243}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1675167594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675167592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefObj: {fileID: 5135735642203516356, guid: 2f9dfc3794329e2448a60ce885174066, type: 3}
-  levelControllerObj: {fileID: 2124051751}
-  minTime: 8
-  maxTime: 24
-  dirLookX: 0
 --- !u!1 &1694592037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,60 +3489,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
-  levelControllerObj: {fileID: 0}
-  minTime: 2
-  maxTime: 3
-  dirLookX: 1
---- !u!1 &1746289982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1746289983}
-  - component: {fileID: 1746289984}
-  m_Layer: 0
-  m_Name: Aligator Spawner 4
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1746289983
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746289982}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 6.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593551243}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1746289984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746289982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefObj: {fileID: 5135735642203516356, guid: 2f9dfc3794329e2448a60ce885174066, type: 3}
+  prefObj: {fileID: 8589403367176650314, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
   levelControllerObj: {fileID: 2124051751}
-  minTime: 8
-  maxTime: 24
-  dirLookX: 0
+  minTime: 2
+  maxTime: 4
+  dirLookX: 1
 --- !u!1 &1805297585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,8 +3538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705e3273332cf8d40bc4615b08715613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefObj: {fileID: 6327622981552816506, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
-  levelControllerObj: {fileID: 0}
+  prefObj: {fileID: 8589403367176650314, guid: 8eeafabb89587b04b915565b1d5727c9, type: 3}
+  levelControllerObj: {fileID: 2124051751}
   minTime: 1
   maxTime: 3
   dirLookX: 1

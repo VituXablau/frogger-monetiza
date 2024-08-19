@@ -6,15 +6,22 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rig;
+    private Animator animChild;
+
     private static GameObject frogger;
+
     [SerializeField] private int maxArea;
-    [HideInInspector] public Vector3 initPos;
-    private Vector2 touchBeganPos, touchEndPos;
     [SerializeField] private float deadZone;
+
+    [HideInInspector] public Vector3 initPos;
+    
+    private Vector2 touchBeganPos, touchEndPos;
+    
 
     void Start()
     {
         rig = GetComponent<Rigidbody>();
+        animChild = GetComponentInChildren<Animator>();
 
         initPos = transform.position;
 
@@ -41,15 +48,24 @@ public class PlayerController : MonoBehaviour
             {
                 touchEndPos = touch.position;
 
+                animChild.SetTrigger("Jumping");
+
                 if (touchBeganPos.x + deadZone >= touchEndPos.x && touchBeganPos.x - deadZone <= touchEndPos.x)
                 {
                     Move(0, 1);
+                    transform.rotation = Quaternion.Euler(0, 0, 0);                    
                     GameManager.instance.IncreaseScore(10);
                 }
                 if (touchBeganPos.x + deadZone < touchEndPos.x)
+                {
                     Move(1, 0);
+                    transform.rotation = Quaternion.Euler(0, 90, 0);
+                }
                 if (touchBeganPos.x - deadZone > touchEndPos.x)
+                {
                     Move(-1, 0);
+                    transform.rotation = Quaternion.Euler(0, -90, 0);
+                }                
             }
         }
     }
